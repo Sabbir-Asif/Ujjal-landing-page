@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjal</title>
+
+    <!-- Tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/195063d635.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-koulen {
+            font-family: "Koulen", sans-serif;
+        }
+
+        .font-merienda {
+            font-family: "Merienda", sans-serif;
+        }
+    </style>
+
+    <!-- Custom config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="">
+    <section class="bg-[#1D1912] h-screen">
+        <div class="flex h-full">
+            <div class="flex-1 flex flex-col">
+                <div class="flex items-center gap-7 md:gap-16 p-6">
+                    <img src="images/logo.png" alt="logo" class="w-1/4">
+                    <button class="btn bg-[#F3F3E6] text-black font-koulen px-6 py-2 text-3xl">Login</button>
+                </div>
+                <div class="flex flex-1 justify-center items-center">
+                    <div class="flex flex-col justify-center items-center">
+                        <h2 class="text-[#FFD576] font-merienda text-9xl font-bold">UJJAL</h2>
+                        <div class="text-white mt-4 space-y-4">
+                            <h4 class="font-koulen text-5xl">FLOUR MILL'S</h4>
+                            <p class="font-merienda text-3xl">Since 1983</p>
+                            <button class="btn bg-[#F3F3E6] text-black font-koulen px-6 py-2 text-3xl">Transports <img
+                                    src="images/delivery.png" alt="delivery logo" class="w-9"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/banner.png" alt="" class="w-3/5 h-screen">
+        </div>
+    </section>
+</body>
+
+</html>
